@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homero" >
+
+    <ImageButton
+        android:id="@+id/salir"
+        android:layout_width="78dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="194dp"
+        android:background="@drawable/salir"
+        android:onClick="salir" />
+
+    <EditText
+        android:id="@+id/resulusu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:ems="10"        />
+
+    <EditText
+        android:id="@+id/resulpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resulusu"
+        android:layout_below="@+id/resulusu"
+        android:layout_marginTop="15dp"
+        android:ems="10"      
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
